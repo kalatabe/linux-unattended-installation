@@ -21,9 +21,17 @@ Use the `build-disk.sh` script to create a cloneable preinstalled disk image bas
 
 ### Prerequisites
 
-Run `sudo apt-get install p7zip-full cpio gzip genisoimage whois pwgen wget fakeroot isolinux xorriso` to install software tools required by the `build-iso.sh` script.
+#### Linux
+
+Run `sudo apt-get install dos2unix p7zip-full cpio gzip genisoimage whois pwgen wget fakeroot isolinux xorriso` to install software tools required by the `build-iso.sh` script.
 
 Run `sudo apt-get install qemu-utils qemu-kvm` in addition to install software tools required by the `build-disk.sh` script.
+
+#### Mac (Ubuntu 18.04 LTS only)
+
+Run `brew install p7zip xorriso wget dos2unix fakeroot core-process/gnucpio/gnucpio` to install software tools required by the `build-iso.sh` script.
+
+The script `build-disk.sh` is not supported on Mac.
 
 ### Usage
 
